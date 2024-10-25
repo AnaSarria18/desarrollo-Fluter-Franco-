@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_drawer_listile_1/screen/inicio.dart';
+import 'package:flutter_drawer_listile_1/screen/pedidos.dart';
 
 class menuDrawer extends StatefulWidget {
   const menuDrawer({super.key});
@@ -32,8 +33,10 @@ class _menuDrawerState extends State<menuDrawer> {
               subtitle: Text("Revisa el estado"),
               trailing: Icon(Icons.arrow_circle_right),
               leading: Icon(Icons.store),
-              onTap: () {},
-
+              onTap: () {
+                Navigator.push(context, 
+                    MaterialPageRoute(builder: (context) => pedidos()));
+              },
               ),
                ListTile(
                 title: Text("Carrito de compras"),

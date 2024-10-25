@@ -39,8 +39,31 @@ class _inicioState extends State<inicio> {
               ),
               SizedBox(height: 8),
 
+
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text("Articulo 2",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              Icon(Icons.favorite_border),
+            ],
+            ),
+            SizedBox(height: 8,),
+            Text(
+              "Bienvenidos a la Tienda de Comercio Electronico E comerce donde encontrara articulos para todos los integantes de la familia"),
+              SizedBox(height: 8),
+              Text("Con flader puedes crear unterfaces atractivas y rapidas gracias a su ampia gama de Widgets",
+              style: TextStyle(fontSize: 16),
+
+              ),
+              SizedBox(height: 8),
+              
          ],
       ),
+      floatingActionButton: ElevatedButton(onPressed: () {
+
+      },
+      child: Icon(Icons.add_box_outlined)),
     );
   }
 }
