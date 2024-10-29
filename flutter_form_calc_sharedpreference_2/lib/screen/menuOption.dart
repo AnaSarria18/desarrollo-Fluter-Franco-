@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_form_calc_sharedpreference_2/screen/registro.dart';
 import 'package:flutter_form_calc_sharedpreference_2/screen/suma.dart';
 
 class menuOption extends StatefulWidget {
@@ -50,7 +51,9 @@ class _menuOptionState extends State<menuOption> {
             title: Text("Registro"),
             leading: Icon(Icons.account_circle_sharp),
             trailing: Icon(Icons.arrow_circle_right_outlined),
-            onTap: () {},
+            onTap: () {
+               Navigator.push(context, MaterialPageRoute(builder: (context) => registerUser()));
+            },
           ),
          ),
 
